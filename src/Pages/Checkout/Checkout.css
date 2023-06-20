@@ -1,0 +1,70 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkout_ad {
+    width: 500px;
+    margin: 10px 70px;
+}
+
+
+.checkout_left {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.checkout h1 {
+    margin-left: 60px;
+}
+
+.blank {
+    background-color: rgb(183, 222, 222);
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 20px 40px;
+
+}
+
+
+p {
+    margin: 0px 50px;
+}
+
+
+/* HEADER  */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* CHECKOUT BTN  */
+
+.checkbtn {
+    background-color: black;
+    position: sticky;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    width: 20%;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    border-radius: 80px 0px 80px 0px;
+    margin: 10px;
+    border: none
+}
+
+
+.checkbtn:hover {
+    background-color: rgba(0, 255, 255, 0.226);
+    color: black;
+}
