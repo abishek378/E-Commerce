@@ -24,12 +24,13 @@ const Login = () => {
 
   const login = (event) => {
     event.preventDefault();
-    alert("log")
+    // alert("log")
     signInWithEmailAndPassword(auth, email, password).then((_) => {
       navigate("/home");
     }).catch((err) => {
-      console.log(err)
-      alert("error", err)
+      console.log()
+      console.log("error", err)
+      alert("Invalid Info")
     }
 
     )
@@ -41,13 +42,15 @@ const Login = () => {
 
   const register = (event) => {
     event.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password).then((authuser) => {
-      console.log(authuser)
-      alert("User Account Created");
-    }).catch((err) => {
-      console.log(err);
-      alert("fill the data");
-    })
+    // createUserWithEmailAndPassword(auth, email, password).then((authuser) => {
+    //   console.log(authuser)
+    //   alert("User Account Created");
+    // }).catch((err) => {
+    //   console.log(err);
+    //   alert("To create fill the field and click");
+    // })
+
+    navigate("/signup")
   }
 
 
