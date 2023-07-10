@@ -42,14 +42,6 @@ const Login = () => {
 
   const register = (event) => {
     event.preventDefault();
-    // createUserWithEmailAndPassword(auth, email, password).then((authuser) => {
-    //   console.log(authuser)
-    //   alert("User Account Created");
-    // }).catch((err) => {
-    //   console.log(err);
-    //   alert("To create fill the field and click");
-    // })
-
     navigate("/signup")
   }
 
